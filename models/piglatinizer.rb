@@ -6,7 +6,7 @@ class PigLatinizer
 #    @latinized_text = latinize
 #  end
   
-  def latinize (text)
+  def piglatinize (text)
     words = text.split(" ")
     pig_words = words.collect do |word|
       first_letter = word[0]
