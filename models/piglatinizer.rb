@@ -10,7 +10,7 @@ class PigLatinizer
     words = text.split(" ")
     words.collect do |word|
       first_letter = word[0]
-      
+      word_without_first_letter = word[1..-1]
     end
   end
   
