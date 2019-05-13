@@ -8,10 +8,12 @@ class PigLatinizer
   
   def latinize 
     words = text.split(" ")
-    words.collect do |word|
+    pig_words = words.collect do |word|
       first_letter = word[0]
       word_without_first_letter = word[1..-1]
+      pig_word = word_without_first_letter + first_letter + "ay"
     end
+    pig_words.join(" ")
   end
   
   
