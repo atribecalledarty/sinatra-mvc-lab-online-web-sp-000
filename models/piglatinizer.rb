@@ -15,6 +15,4 @@ class PigLatinizer
     end
     pig_words.join(" ")
   end
-  
-  
 end
