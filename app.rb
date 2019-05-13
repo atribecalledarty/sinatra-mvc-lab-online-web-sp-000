@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require_relative './models/piglatinizer.rb'
 
 class App < Sinatra::Base
   get '/' do
@@ -6,6 +7,8 @@ class App < Sinatra::Base
   end
   
   post '/' do
+    
+    
     erb :results
   end
 end
