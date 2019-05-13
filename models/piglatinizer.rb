@@ -7,7 +7,10 @@ class PigLatinizer
   end
   
   def latinize 
-    
+    words = text.split(" ")
+    words.collect do |word|
+      
+    end
   end
   
   
