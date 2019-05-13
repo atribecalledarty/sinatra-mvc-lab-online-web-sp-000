@@ -9,9 +9,16 @@ class PigLatinizer
   def piglatinize (text)
     words = text.split(" ")
     pig_words = words.collect do |word|
+      index = 0
+      
+      
+      
+      
+      
+      
+      
       if word.length == 1
         pig_word = word + "way"
-      elsif 
       else
         first_letter = word[0]
         word_without_first_letter = word[1..-1]
