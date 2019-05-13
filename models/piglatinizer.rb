@@ -17,6 +17,7 @@ class PigLatinizer
           ["a", "e", "i", "o", "u"].include?(character)
         end
         first_chunk = word[0..index_of_vowel]
+        first_chunk = first_chunk[0..-2]
         word_without_first_chunk = word[index_of_vowel..-1]
         pig_word = word_without_first_chunk + first_chunk + "ay"
       end
