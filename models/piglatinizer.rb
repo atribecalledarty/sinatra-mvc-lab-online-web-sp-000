@@ -9,7 +9,8 @@ class PigLatinizer
   def piglatinize (text)
     words = text.split(" ")
     pig_words = words.collect do |word|
-      index = 0
+      characters = word.split("")
+      characters.find
       
       
       
