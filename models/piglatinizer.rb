@@ -9,11 +9,16 @@ class PigLatinizer
   def piglatinize (text)
     words = text.split(" ")
     pig_words = words.collect do |word|
-      characters = word.split("")
-      index_of_vowel = characters.find_index do |character|
-        ["a", "e", "i", "o", "u"].include?(character)
-      end
-      first_chunk = word[0..index]
+      if word.length == 1
+        pig_word = word + "way"
+      else
+        characters = word.split("")
+        index_of_vowel = characters.find_index do |character|
+          ["a", "e", "i", "o", "u"].include?(character)
+        end
+        first_chunk = word[0.index]
+        word_without_first_chunk = word[index..-1]
+        pig_word = word_without_first_chunk + first_chunk + "ay"
       
       
       
