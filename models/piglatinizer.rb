@@ -1,12 +1,12 @@
 class PigLatinizer
-  attr_accessor :text, :latinized_text
+#  attr_accessor :text, :latinized_text
   
-  def initialize (text)
-    @text = text
-    @latinized_text = latinize
-  end
+ # def initialize (text)
+#    @text = text
+#    @latinized_text = latinize
+#  end
   
-  def latinize 
+  def latinize (text)
     words = text.split(" ")
     pig_words = words.collect do |word|
       first_letter = word[0]
