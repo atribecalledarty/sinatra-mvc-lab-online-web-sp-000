@@ -10,7 +10,10 @@ class PigLatinizer
     words = text.split(" ")
     pig_words = words.collect do |word|
       characters = word.split("")
-      characters.find
+      characters.find_index do |character|
+        ["a", "e", "i", "o", "u"].include?
+      
+      end
       
       
       
