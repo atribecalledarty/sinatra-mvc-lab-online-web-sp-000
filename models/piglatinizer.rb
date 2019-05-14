@@ -11,7 +11,7 @@ class PigLatinizer
     pig_words = words.collect do |word|
       
       characters = word.split("")
-      if ["a", "e", "i", "o", "u"].include?(characters.first)
+      if ["a", "e", "i", "o", "u"].include?(characters.first.downcase)
         pig_word = word + "way"
       else  
           
