@@ -13,6 +13,14 @@ class PigLatinizer
         pig_word = word + "way"
       else
         characters = word.split("")
+        if ["a", "e", "i", "o", "u"].include?(characters.first)
+          pig_word = word + "way"
+        else  
+          
+          
+          
+          
+          
         index_of_vowel = characters.find_index do |character|
           ["a", "e", "i", "o", "u"].include?(character)
         end
